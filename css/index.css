@@ -1,0 +1,257 @@
+/* 促销 start */
+#promotional {
+	background-color: #de3f37;
+}
+.promotional {
+	height: 80px;
+	position: relative;
+}
+.promotional a {
+	display: block;
+	height: 80px;
+	background: url(../images/promotional-bg.png) no-repeat;
+	}
+.promotional-x {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	background: url(../images/x.png) no-repeat;
+	right: 11px;
+	bottom: 0;
+}
+/*  shortcut start */
+#shortcut {
+	background-color: #e3e4e5;
+}
+.shortcut {
+	height: 32px;
+	font-size: 14px;
+	line-height: 32px;
+	overflow: hidden;
+}
+.shortcut-left {
+	position: relative;
+}
+.shortcut-left span:nth-child(1) {
+	color: #f10215;
+	position: absolute;
+	left: 9px;
+	top: 0;
+}
+.shortcut-left span:nth-child(2) {
+	color: #9b9b9b;
+	font-size: 12px;
+	margin-left: 25px;
+}
+.shortcut-right li {
+	float: left;
+}
+.shortcut-right li a {
+	font-size: 12px;
+	color: #9b9b9b;
+}
+.shortcut-right li a:hover {
+	text-decoration: none;
+}
+.shortcut-right .shortcut-active a{
+	color: #f10215;
+}
+.shortcut-border {
+	width: 1px;
+	height: 10px;
+	background-color: #ccc;
+	margin: 11px 11px 0 13px;
+}
+.short-down {
+	position: relative;
+	padding-right: 16px;
+}
+.ico-down {
+	position: absolute;
+	right: 0;
+	top: -3px;
+}
+/*  header start */
+#header {
+	border-bottom: 1px solid #ddd;
+}
+.header {
+	height: 141px;
+}
+.header-l {
+	width: 192px;
+	height: 142px;
+}
+.header-logo {
+	display: block;
+	width: 190px;
+	height: 120px;
+	background-image: url(//misc.360buyimg.com/mtd/pc/index_2019/1.0.0/assets/sprite/header/sprite.png);
+	text-indent: -9999px;
+	margin-top: 11px;
+}
+.header-m {
+	width: 793px;
+	height: 142px;
+}
+.header-m-top {
+	width: 731px;
+	height: 87px;
+	padding: 26px 0 0 62px;
+}
+.header-search {
+	width: 588px;
+	height: 87px;
+}
+.header-search-top {
+	width: 546px;
+	height: 36px;
+	border: 2px solid #e1251b;
+	position: relative;
+}
+.header-search-top input{
+	width: 488px;
+	height: 36px;
+	border: 0;
+	outline: none;
+	font-size: 20px;
+	text-indent: 20px;
+}
+.header-search-top button {
+	border: 0;
+	height: 36px;
+	width: 58px;
+	outline: none;
+	background-color: #e1251b;
+	cursor: pointer;
+}
+.ico-search {
+	font-size: 20px;
+	color: #fff;
+}
+.header-search-top-img {
+	position: absolute;
+	right: 65px;
+	top: 12px;
+	width: 16px;
+	height: 13px;
+	background: url(../images/photo.png);
+}
+.header-search-list {
+	margin-top: 9px;
+}
+.header-search-list li {
+	float: left;
+	margin-right: 10px;
+}
+.header-search-list .header-search-list-active a {
+	color: #e1251b;
+}
+.header-search-list li a:hover {
+	text-decoration: none;
+}
+.header-search-list li a {
+	color: #999;
+}
+
+.header-car button {
+	width: 130px;
+	height: 36px;
+	border: 1px solid #666;
+	color: #e1251b;
+	outline: none;
+	margin-left: 10px;
+	cursor: pointer;
+	position: relative;
+	background-color: #fff;
+}
+.header-car-num {
+	position: absolute;
+	top: 0;
+	left: 24px;
+	width: 16px;
+	height: 16px;
+	background-color: #e1251b;
+	color: #fff;
+	line-height: 18px;
+	border-radius: 10px;
+	font-size: 9px;
+}
+.header-m-bot-list li {
+	float: left;
+	margin-right: 24px;
+}
+.header-m-bot-list li a {
+	font-size: 16px;
+	color: #000;
+	font-weight: 900;
+}
+.header-m-bot-list li:nth-of-type(1) a {
+	margin-left: 15px;
+	color: #e1251b;
+}
+.header-m-bot-list li:nth-of-type(2) a {
+	color: #e1251b;
+}
+
+.header-r {
+	height: 142px;
+	width: 215px;
+}
+.header-r a {
+	display: block;
+	width: 190px;
+	height: 120px;
+	background: url(../images/sk2.png);
+	margin-top: 11px;
+	margin-left: 12px;
+}
+
+
+/* fs  start */
+.fs {
+	height: 510px;
+	background-color: green;
+}
+
+/* seckill */
+.seckill {
+	height: 295px;
+	background-color: skyblue;
+}
+
+/* special */
+.special {
+	height: 347px;
+	background-color: gray;
+}
+
+/* nicegood */
+.nicegood {
+	height: 296px;
+	background-color: red;
+}
+
+/* core */
+.core {
+	height: 354px;
+	background-color: yellow;
+}
+
+/* channel */
+.channel {
+	height: 1028px;
+	background-color: skyblue;
+}
+
+/* recommend */
+.recommend {
+	height: 200px;
+	background-color: red;
+}
+
+/* footer */
+.footer {
+	height: 540px;
+	background-color: pink;
+}
