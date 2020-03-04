@@ -1,0 +1,248 @@
+.w {
+	width: 1210px;
+}
+/* header */
+.header {
+	height: 100px;
+	line-height: 100px;
+}
+#header {
+	border-bottom: 1px solid #f2f2f2;
+}
+.header-left a{
+	width: 148px;
+	height: 100px;
+	background: url(../images/logo1.png) no-repeat center;
+}
+.header-left p {
+	font-size: 24px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.header-right {
+	font-size: 18px;
+}
+.header-right span{
+	color: #ccc;
+}
+.header-right a{
+	color: #e71304;
+	margin-left: 10px;
+}
+
+/* con */
+.con {
+	width:397px;
+	height: 595px;
+	padding: 87px 409px 0 404px;
+}
+.con-num {
+	overflow: hidden;
+	margin-bottom: 14px;
+}
+.con-num li {
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+}
+.con-num li:nth-of-type(1), .con-num li:nth-of-type(3), .con-num li:nth-of-type(5) {
+	width: 22px;
+	margin:0 12px;
+	border: 1px solid #ccc;
+	border-radius: 12px;
+	color: #ccc;
+}
+.con-num li:nth-of-type(2), .con-num li:nth-of-type(4) {
+	width: 126px;
+	background: url(../images/sprite.png) no-repeat 0 -93px;
+}
+.con-num li:nth-of-type(1) {
+	position: relative;
+	z-index: 10;
+	border: 0;
+	margin-left: 15px;
+}
+.con-num li:nth-of-type(1) span {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+.con-num li:nth-of-type(1) span.greennum {
+	background: url(../images/sprite.png) no-repeat 0 -200px;
+}
+
+.con-info {
+	overflow: hidden;
+	margin-bottom: 55px;
+}
+.con-info li {
+	float: left;
+	margin-right: 108px;
+}
+.con-info li:nth-of-type(3) {
+	margin: 0;
+}
+.con-info li:nth-of-type(1) {
+	color: #33bb44;
+}
+
+.inpwrap {
+	width: 394px;
+	height: 50px;
+	border: 1px solid #ccc;
+	line-height: 50px;
+	font-size: 16px;
+	overflow: hidden;
+	margin-bottom: 35px;
+}
+.inpwrap span {
+	width: 100px;
+	text-align: center;
+	border-right: 1px solid #ccc;
+}
+.inpwrap input {
+	width: 290px;
+	height: 50px;
+	border: 0;
+	outline: none;
+	text-indent: 20px;
+	font-size: 14px;
+}
+.verify {
+	display: block;
+	width: 390px;
+	height: 53px;
+	line-height: 53px;
+	outline: none;
+	border: 0;
+	background-color: #fff;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #ccc;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+.next {
+	display: block;
+	width: 390px;
+	height: 53px;
+	line-height: 53px;
+	outline: none;
+	border: 0;
+	background-color: #e2231a;
+	font-size: 14px;
+	text-align: center;
+	border: 1px solid #fff;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	margin-bottom: 26px;
+}
+.user {
+	height: 28px;
+	line-height: 28px;
+}
+.user div{
+	width: 123px;
+	font-size: 14px;
+} 
+.user-left span:nth-of-type(1) {
+	width: 28px;
+	height: 28px;
+	background: url(../images/sprite.png) no-repeat 0 -160px;
+	margin-right: 10px;
+}
+.user-right span:nth-of-type(1) {
+	width: 28px;
+	height: 28px;
+	background: url(../images/sprite.png) no-repeat 0 -160px;
+	margin-right: 10px;
+}
+
+/* footer */
+.footer {
+	height: 120px;
+	padding-top: 30px;
+}
+.footer-link {
+	width: 828px;
+	height: 20px;
+	font-size: #666;
+	margin: 0 auto;
+}
+.footer-link li {
+	float: left;
+}
+.footer-link li a {
+	color: #858082;
+}
+.footer-link li a:hover {
+	color: #e2231a;
+}
+.footer-border {
+	width: 1px;
+	height: 12px;
+	background-color: #858082;
+	margin: 0 10px;
+}
+
+/* mark */
+.mark {
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, .3);
+	width: 100%;
+	height: 100%;
+}
+.wrap {
+	width: 780px;
+	height: 580px;
+	border:2px solid #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -400px;
+	margin-top:  -300px;
+	padding: 10px;
+	background-color: #fff;
+	z-index: 10;
+}
+.wrap-con {
+	padding-top: 10px;
+	padding-left: 5px;
+	height: 400px;
+	background-color: pink;
+	overflow-x: hidden;
+	overflow-y: auto;
+	word-break:break-all;
+}
+.btn {
+	width: 400px;
+	height: 50px;
+	background-color: #e2231a;
+	border: 0;
+	margin: 50px auto;
+	display: block;
+	outline: none;
+	color: #fff;
+	font-size: 20px;
+	cursor: pointer;
+}
+.remove {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 20px;
+	top: 0;
+	line-height: 20px; 
+	text-align: center;
+}
+.ico-remove {
+	  color: #e2231a;
+	  font-size: 20px;
+}

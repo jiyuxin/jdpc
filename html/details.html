@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/details.css">
+</head>
+<body>
+	<div id="shortcut">
+		<div class="shortcut w">
+			<ul class="shortcut-left fl">
+				<li>
+					<a href="javascript:;">
+						<span class="ico-home"></span>
+						<span>京东首页</span>	
+				  </a>
+				</li>
+				<li>
+					<a href="javascript:;">
+						<span class="ico-local"></span>
+						<span>北京</span>	
+				  </a>
+				</li>
+			</ul>
+			<ul class="shortcut-rignt fr">
+				<li><a href="javascript:;">您好，请登录</a></li>
+				<li><a href="javascript:;" class="shortcut-current">免费注册</a></li>
+				<li class="shortcut-border"></li>
+				<li><a href="javascript:;">我的订单</a></li>
+				<li class="shortcut-border"></li>
+				<li class="shortcut-down">
+					<a href="javascript:;">我的京东</a>
+					<span class="ico-down"></span>
+				</li>
+				<li class="shortcut-border"></li>
+				<li><a href="javascript:;">京东会员</a></li>
+				<li class="shortcut-border"></li>
+				<li class="shortcut-down">
+					<a href="javascript:;">企业采购</a>
+					<span class="ico-down"></span>
+				</li>
+				<li class="shortcut-border"></li>
+				<li class="shortcut-down">
+					<a href="javascript:;">客户服务</a>
+					<span class="ico-down"></span>
+				</li>
+				<li class="shortcut-border"></li>
+				<li class="shortcut-down">
+					<a href="javascript:;">网站导航</a>
+					<span class="ico-down"></span>
+				</li>
+				<li class="shortcut-border"></li>
+				<li><a href="javascript:;">手机京东</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="details-header">
+		<div class="details-header w">
+			<div class="header-logo fl">
+				<a href="javascript:;"></a>
+			</div>
+			<div class="header-class fl">
+				<select class="class-select">
+					<option selected="selected">全部分类</option>
+					<option>电子</option>
+					<option>美妆</option>
+					<option>男鞋</option>
+					<option>女装</option>
+				</select>
+			</div>
+			<div class="header-search fl">
+				<div class="search-wrap">
+					<input class="fl" type="text" placeholder="轻薄本">
+					<button class="fl">搜全站</button>
+					<button class="fl">搜本站</button>  
+				</div>
+				<div class="search-nav">
+					<ul class="nav-ul">
+						<li><a href="javascript:;">电脑频道</a></li>
+						<li><a href="javascript:;">轻薄本</a></li>
+						<li><a href="javascript:;">游戏显示器</a></li>
+						<li><a href="javascript:;">免费试用</a></li>
+						<li><a href="javascript:;">办公优选</a></li>
+						<li><a href="javascript:;">私人订制</a></li>
+						<li><a href="javascript:;">拓展坞</a></li>
+						<li><a href="javascript:;">插座</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header-car fl">
+				<button class="car-btn">
+					<span class="ico-car"></span>
+					<span>&nbsp;我的购物车&nbsp;&nbsp;</span>
+					<span class="ico-gt"></span>
+					<span class="car-btn-posi">0</span>
+				</button>
+			</div>
+		</div>
+	</div>
+	<div id="details-banner">
+		<a href="javascript:;"></a>
+	</div>
+	<div id="details-nav">
+		<div class="details-nav w">
+			<ul class="nav-ul">
+				<li><a href="javascript:;">首页</a></li>
+				<li class="nav-item-down"><a href="javascript:;">全部分类</a></li>
+				<li><a href="javascript:;">专业游戏本</a></li>
+				<li><a href="javascript:;">游戏台式机</a></li>
+				<li><a href="javascript:;">自营组装电脑</a></li>
+				<li><a href="javascript:;">电竞键鼠、背包、耳机</a></li>
+				<li><a href="javascript:;">电竞显示器</a></li>
+				<li class="item-wrap">
+					<input type="text" placeholder="雷神游戏本" class="fl item-inp">
+					<button class="fl item-btn">搜索</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div id="details-main">
+		<div class="details-main w">
+			<div class="main-left fl">
+				<div id="wrap" class="scale-small">
+					<div id="mask" class="mask"></div>
+					<div id="module" class="module"></div>
+				</div>
+				<ul class="scale-ul"></ul>
+				<div id="big" class="scale-big">
+					<img src="../images/scale.png" alt="" id="bigimg">
+				</div>
+			</div>
+			<div class="main-right fl"></div>
+		</div>
+	</div>
+	<div id="details-info">
+		<div class="details-info w"></div>
+	</div>
+
+	<script type="text/javascript">
+		var oMask = document.getElementById('mask')
+		var oModule = document.getElementById('module')
+		var oWrap = document.getElementById('wrap')
+		var oBig = document.getElementById('big')
+		var oBigimg = document.getElementById('bigimg')
+
+
+		oWrap.onmouseenter = function () {
+			oBig.style.display = "block"
+			oModule.style.visibility = "visible"
+		}
+		oWrap.onmouseleave = function () {
+			oBig.style.display = "none"
+			oModule.style.visibility = "hidden"
+		}
+		//需求
+		//鼠标进入，module跟随鼠标滑动
+		//big显示相对应的背景
+		oWrap.onmousemove = function (ev) {
+		var x = .5*(oModule.offsetWidth)
+		var y = .5*(oModule.offsetHeight)
+		var maxX = oWrap.offsetWidth - x
+		var maxY = oWrap.offsetHeight - y
+			oModule.style.left = ev.offsetX - x + 'px'
+			oModule.style.top = ev.offsetY - y + 'px'
+			if (ev.offsetX < x) {
+				oModule.style.left = 0 + 'px'
+			}
+			if (ev.offsetY < y) {
+				oModule.style.top = 0 + 'px'
+			}
+			if (ev.offsetX > maxX) {
+				oModule.style.left = oWrap.offsetWidth - oModule.offsetWidth + 'px'
+			}
+			if (ev.offsetY > maxY) {
+				oModule.style.top = oWrap.offsetHeight - oModule.offsetHeight + 'px'
+			}
+			var proportionX = oModule.offsetLeft / (oWrap.offsetWidth - oModule.offsetWidth)
+			var proportionY = oModule.offsetTop / (oWrap.offsetHeight- oModule.offsetHeight)
+
+			var xx = proportionX * (oBigimg.offsetWidth - oBig.offsetWidth)
+			var yy = proportionY * (oBigimg.offsetHeight - oBig.offsetHeight)
+			oBigimg.style.left = -xx + 'px'
+			oBigimg.style.top = -yy + 'px'
+
+		}
+	</script>
+</body>
+</html>

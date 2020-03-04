@@ -609,14 +609,157 @@
 .channel-top h3::after {
 	right: -15px;
 }
-/* recommend */
-.recommend {
-	height: 200px;
-	background-color: red;
+.channel-item1 {
+	width: 592px;
+	height: 372px;
+	background-color: yellow;
+	margin-right: 42px;
+}
+.channel-item1 a:nth-of-type(1) {
+	width: 292px;
+	height: 372px;
+	background: url(../images/shoes.png) no-repeat;
+	margin-right: 8px;
+}
+.channel-item1 a:nth-of-type(2) {
+	width: 292px;
+	height: 372px;
+	background: url(../images/phone.png) no-repeat;
+}
+.channel-item2 {
+	width: 533px;
+	height: 372px;
+	background-color: pink;
+}
+.item2-left {
+	width: 233px;
+	height: 372px;
+	background-color: gray;
+	margin-right: 67px;
+}
+.item2-left-top {
+	width: 233px;
+	height: 191px;
+	padding-top: 20px;
+}
+.item2-left-top-title {
+	height: 28px;
+}
+.item2-left-top-title span:nth-of-type(1) {
+	font-size: 26px;
+	font-weight: bold;
+	margin-right: 2px;
+}
+.item2-left-top-title span:nth-of-type(2) {
+	color: #666;
+}
+.item2-left-top-img {
+	height: 133px;
+	line-height: 133px;
+	margin-bottom: 30px;
+}
+.item2-left-top-img img {
+	display: inline-block;
+}
+.item2-left-bot {
+	width: 233px;
+	height: 162px;
+}
+.item2-left-bot-title {
+	height: 40px;
+}
+.item2-left-bot-title span:nth-of-type(1) {
+	font-size: 26px;
+	font-weight: bold;
+	margin-right: 2px;
+}
+.item2-left-bot-title span:nth-of-type(2) {
+	color: #666;
 }
 
+
+
+
+
+
+
+.item2-right {
+	width: 233px;
+	height: 372px;
+	background-color: orange;
+}
+
+
+
+
+
+.channel-item3 {
+	width: 592px;
+	height: 546px;
+	background-color: red;
+	margin-right: 42px;
+	margin-top: 28px;
+}
+.channel-item4 {
+	width: 533px;
+	height: 546px;
+	background-color: green;
+	margin-top: 28px;
+}
+/* recommend */
+.recommend {
+	background-color: pink;
+}
+.rec-ul {
+	width: 1180px;
+	padding: 0 5px;
+	overflow: hidden;
+}
+.rec-ul li {
+	float: left;
+	width: 236px;
+	height: 330px;
+}
+.rec-img {
+	width: 236px;
+	height: 158px;
+	margin-bottom: 39px;
+	text-align: center;
+}
+.rec-img img {
+	display: inline-block;
+}
+.rec-info {
+	height: 50px;
+	line-height: 25px;
+	width: 200px;
+	margin: 0 auto;
+	font-size: 14px;
+	overflow: hidden;
+	 overflow : hidden;/*必须结合的属性,当内容溢出元素框时发生的事情*/
+    text-overflow: ellipsis;/*可以用来多行文本的情况下，用省略号“…”隐藏超出范围的文本 。*/
+    display: -webkit-box;/*必须结合的属性 ，将对象作为弹性伸缩盒子模型显示 。*/
+    -webkit-line-clamp: 2;/*用来限制在一个块元素显示的文本的行数。*/
+    -webkit-box-orient: vertical;/*必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式 。*/
+    color: #666;
+}
+.rec-price {
+	margin-top: 5px;
+	margin-left: 15px;
+	color: #e1251b;
+
+}
+.rec-price span:nth-of-type(2){
+	font-size: 20px;
+		font-weight: bold;
+}
 /* footer */
 .footer {
 	height: 540px;
-	background-color: pink;
+	background-color: gray;
+}
+.footer li {
+	float: left;
+	width: 236px;
+	height: 330px;
 }
