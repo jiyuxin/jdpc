@@ -449,7 +449,7 @@
 		<!-- 推荐 -->
 		<div id="recommend">
 			<div class="recommend w">
-				<ul class="rec-ul">
+				<ul class="rec-ul" id="rec-ul">
 					<li>
 						<a href="javascript:;">
 							<div class="rec-img">
@@ -463,7 +463,7 @@
 							</div>	
 						</a>
 					</li>
-					<li>
+					<!-- <li>
 						<a href="javascript:;">
 							<div class="rec-img">
 								<img src="images/img1.png" alt="">
@@ -579,7 +579,7 @@
 								<span>￥</span> <span>128.00</span>
 							</div>	
 						</a>
-					</li>
+					</li> -->
 				</ul>
 			</div>
 		</div>
@@ -588,5 +588,30 @@
 			<div class="footer w">
 			</div>
 		</div>
+	<!-- 商品模板 -->
+	<script id="template" type="text/html">
+	  <% for (var i = 0; i < product.length; i++) { %>
+			<li id="<%= product[i].id %>">
+				<a href="html/details.html?id=<%= product[i].id %>">
+					<div class="rec-img">
+						<img src="<%= product[i].imgurl %>" alt="">
+					</div>
+					<div class="rec-info">
+						<%= product[i].info %>
+					</div>
+					<div class="rec-price">
+						<span>￥</span> <span><%= product[i].price %></span>
+					</div>	
+				</a>
+			</li>
+	  <% } %>
+	
+
+
+
+		
+	</script>
+	<script type="text/javascript" src="js/template-web.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
   </body>
 </html>

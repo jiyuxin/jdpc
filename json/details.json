@@ -1,0 +1,22 @@
+{
+  "details": [
+    {
+      "id": 1,
+      "info": "这是1号商品",
+      "imgurl": "asdasdas",
+      "price": "100"
+    },
+    {
+      "id": 2,
+      "info": "这是3号商品",
+      "imgurl": "asdasdas",
+      "price": "200"
+    },
+    {
+      "id": 3,
+      "info": "这是3号商品",
+      "imgurl": "asdasdas",
+      "price": "300"
+    }
+  ]
+}
